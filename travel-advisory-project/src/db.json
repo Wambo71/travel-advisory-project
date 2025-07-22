@@ -1,0 +1,67 @@
+{
+    "countries": [
+        {
+            "id": 1,
+            "name": "United States",
+            "region": "North America",
+            "advisory": "Exercise increased caution due to crime."
+        },
+        {
+            "id": 2,
+            "name": "Canada",
+            "region": "North America",
+            "advisory": "Exercise normal precautions."
+        },
+        {
+            "id": 3,
+            "name": "Mexico",
+            "region": "North America",
+            "advisory": "Reconsider travel due to crime and kidnapping."
+        },
+        {
+            "id": 4,
+            "name": "Brazil",
+            "region": "South America",
+            "advisory": "Exercise increased caution due to crime."
+            
+           
+        },
+        {
+            "id": 5,
+            "name": "Japan",
+            "region": "Asia",
+            "advisory":"Exercise normal precautions."
+        },
+        {
+            "id": 6,
+            "name": "Germany",
+            "region": "Europe",
+            "advisory": "Exercise normal precautions."
+        },
+        {
+            "id": 7,
+            "name": "Australia",
+            "region": "Oceania",
+            "advisory": "Exercise normal precautions."
+        },
+        {
+            "id": 8,
+            "name": "South Africa",
+            "region": "Africa",
+            "advisory": "Reconsider travel due to crime."
+        },
+        {
+            "id": 9,
+            "name": "India",
+            "region": "Asia",
+           "advisory": "Exercise increased caution due to crime"
+        },
+        {
+            "id": 10,
+            "name": "Kenya",
+            "region": "Africa",
+            "advisory": "Reconsider travel due to crime"
+            
+        }     
+    ]
+}
