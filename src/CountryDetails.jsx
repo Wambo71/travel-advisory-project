@@ -1,13 +1,13 @@
 import React,{useEffect ,useState} from "react";
 
-const url = "https:localhost:3000/countries";
+const API_URL = "https:localhost:3000/countries";
 
 
 const CountryDetails = () => {
     const[country,setCountry] = useState()
 
       useEffect (() => {
-        fetch(url)
+        fetch(API_URL)
             .then((response) => response.json())
             .then((data) => { setCountry(data);
             })
