@@ -1,32 +1,32 @@
-import React, { useEffect, useState} from "react";
-import CountryCard from "./CountryCard";
+import React, { useEffect, useState } from 'react';
+import CountryCard from './CountryCard';
 
 function CountryList() {
-    const [countries, setCountries] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [notes, setNotes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        fetch()
-            .then((res) => res.json())
-            .then((data) => {
-                setCountries(data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.error("Error fetching countries:", error);
-                setLoading(false);
-            });
-    }, []);
+  useEffect(() => {
+    fetch('http://localhost:3001/userNotes')
+      .then((res) => res.json())
+      .then((data) => {
+        setNotes(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error('Error fetching user notes:', err);
+        setLoading(false);
+      });
+  }, []);
 
-    if (loading) return <p>Loading countries...</p>;
+  if (loading) return <p>Loading notes...</p>;
 
-    return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {countries.map((country) => (
-                <CountryCard key={country.name} country={country} />
-            ))}
-        </div>
-    );
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {notes.map((note) => (
+        <CountryCard key={note.id} note={note} />
+      ))}
+    </div>
+  );
 }
 
 export default CountryList;
