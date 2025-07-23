@@ -28,7 +28,7 @@ const TravelNoteForm = () => {
     })
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          alert("Network response was not ok");
         }
         return response.json();
       })
