@@ -6,9 +6,9 @@ function Navbar() {
     <nav>
         <p>
             <ul>
-                <li><NAVLINK to= {"./About"}>About</NAVLINK></li>
-                <li><NAVLINK to={"./CountryDetails"}>CountryDetails</NAVLINK></li>
-                <li><NAVLINK to={"countryList"}>CountryList</NAVLINK></li>
+                <li><NavLink to= {"./About"}>About</ NavLink></li>
+                <li><NavLink to={"./CountryDetails"}>CountryDetails</NavLink></li>
+                <li><NavLink to={"countryList"}>CountryList</NavLink></li>
             </ul>
         </p>
     </nav>
